@@ -66,11 +66,14 @@ body {
   background-color: #fff;
   flex: 1; }
 
+.detail-cover {
+  display: flex; }
+
 .detail {
   font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
 
 .description {
@@ -105,7 +108,7 @@ body {
     border-radius: 100px;
     width: 90%;
     transition: all .2s;
-    margin-right: -3.5rem; }
+    margin-right: -3.25rem; }
     .search__input:focus {
       outline: none;
       width: 100%;
@@ -142,8 +145,8 @@ body {
   .user-nav__icon-box {
     position: relative; }
   .user-nav__icon {
-    height: 2rem;
-    width: 2rem;
+    height: 2.25rem;
+    width: 2.25rem;
     fill: var(--color-grey-dark-2); }
   .user-nav__notification {
     font-size: .8rem;
@@ -235,7 +238,7 @@ body {
     display: flex;
     align-items: center; }
   .overview__icon-location {
-    margin-right: 0.5rem; }
+    margin-right: .5rem; }
   .overview__rating {
     background-color: var(--color-primary);
     align-self: stretch;
@@ -286,7 +289,7 @@ body {
     transform: scale(1);
     box-shadow: none; } }
 
-.paragraph:not(:last-child) {
+.paragraph:not(:last-of-type) {
   margin-bottom: 2rem; }
 
 .list {
@@ -319,6 +322,8 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -326,7 +331,7 @@ body {
     border-radius: 50%;
     border: 3px solid #fff; }
     .recommend__photo:not(:last-child) {
-      margin-right: -1.5rem; }
+      margin-right: -2rem; }
 
 .review {
   background-color: #fff;
@@ -370,3 +375,45 @@ body {
     color: var(--color-grey-light-2);
     font-family: sans-serif;
     z-index: 1; }
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .btn > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s; }
+  .btn__visible {
+    padding: 2rem 7.5rem; }
+  .btn__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%; }
+  .btn:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
