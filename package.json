@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Landing page for trillo",
   "main": "index.js",
-  "homepage": "https://andriizhyvotovskyipl.github.io/trillo",
+  "homepage": "https://github.com/andriizhyvotovskyipl/trillo",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AndriiZhyvotovskyiPL/Trillo.git"
